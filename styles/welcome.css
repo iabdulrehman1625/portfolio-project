@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1.animate {
+    font-size: 2.5rem;
+    color: #00ffff;
+    margin-bottom: 15px;
+    animation: slideDown 1.2s ease-out;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.nav-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    background: #00ffff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+    background: #00dddd;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    form {
+        opacity: 0; transform: translateY(20px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0; transform: translateY(-50px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1.animate {
+        font-size: 2rem;
+    }
+
+    .nav-links a {
+        display: block;
+        margin-top: 15px auto;
+    }
+}
