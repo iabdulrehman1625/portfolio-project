@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #cceeff;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    background: #00bfff;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #0099cc;
+}
+
+main {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about img {
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bio {
+    max-width: 500px;
+}
+
+.bio h2 {
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+footer {
+    text-align: center;
+    background: #004080;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; transform: translateY(-20px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0; transform: translateY(40px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 180px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px 6px;
+    }
+}
