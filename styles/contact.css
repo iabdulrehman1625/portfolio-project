@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+header {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    background: #00bfff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #0099cc;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form h2, .contact-info h2 {
+    margin-bottom: 15px;
+    color: #006699;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00bfff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0099cc;
+}
+
+.contact-info p a {
+    margin: 5px 0px;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.contact-info img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+/* Animation */
+.fade {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0; transform: translateY(30px);
+    }
+    to {
+        opacity: 1; transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
