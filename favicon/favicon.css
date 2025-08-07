@@ -1,0 +1,14 @@
+/* favicon.css */
+/* Styling related to favicon or additional head styling */
+
+:root {
+  --favicon-size: 32px;
+  --favicon-shape: square;
+}
+
+/* Just in case you want to use favicon image inside page */
+.favicon-preview {
+  width: var(--favicon-size);
+  height: var(--favicon-size);
+  border-radius: 4px;
+}
