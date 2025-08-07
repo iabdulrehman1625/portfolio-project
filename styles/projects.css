@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 main {
-    padding: 40px 20px; 
+    padding: 40px 20px;
 }
 
 .projects {
@@ -69,7 +69,7 @@ main {
 }
 
 footer {
-    background: #003366;
+    background-color: #003366;
     color: white;
     text-align: center;
     padding: 20px;
@@ -79,10 +79,13 @@ footer {
 /* Animation */
 @keyframes fadeInUp {
     from {
-        opacity: 0; transform: translateY(30px);
+        opacity: 0;
+        transform: translateY(30px);
     }
+
     to {
-        opacity: 1; transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
